@@ -1,0 +1,47 @@
+/* Write your CSS below, don't change the rules above. */
+body{
+  background-color: #E1F0DA;
+}
+table {
+  margin: 0 auto; /* center the table horizontally */
+  border-collapse: collapse; /* remove the space between table cells */
+}
+
+h1{
+  color: #294B29;;
+}
+
+th, td {
+  color: #294B29;
+  border: 1px ; /* add a border to the table cells */
+  padding: 10px; /* add some space around the cell content */
+  text-align: center; /* center the cell content vertically */
+}
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 600px) { /* use a media query to adjust the table layout for smaller screens */
+  table, th, td {
+    display: block; 
+    /* make the table elements block-level */
+  }
+  th, td {
+    margin: 0 auto;
+    border: none; /* remove the border from the cells */
+    padding: 10px; /* add some space around the cell content */
+    text-align: center; /* center the cell content vertically */
+  }
+  th {
+    text-align: center; /* align the table headers to the left */
+  }
+  td:before {
+    content: attr(data-label); /* add a label before each cell value */
+    font-weight: bold; /* make the label bold */
+    display: inline-block; /* make the label inline-block */
+    width: 100px; /* set a fixed width for the label */
+  }
+}
+
