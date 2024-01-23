@@ -25,7 +25,9 @@ img{
 
 @media (max-width: 600px) { /* use a media query to adjust the table layout for smaller screens */
   table, th, td {
-    display: block; 
+    display: flex; 
+    justify-content: center;
+    text-align: center;
     /* make the table elements block-level */
   }
   th, td {
