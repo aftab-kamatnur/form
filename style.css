@@ -1,6 +1,7 @@
 /* Write your CSS below, don't change the rules above. */
 body{
   background-color: #E1F0DA;
+  font-size: xx-large;
 }
 table {
   margin: auto; /* center the table horizontally */
@@ -8,7 +9,7 @@ table {
 }
 
 h1{
-  color: #294B29;;
+  color: #294B29;
 }
 
 th, td {
@@ -19,9 +20,18 @@ th, td {
 }
 
 img{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 550px;
 }
+
+.center {
+  margin: auto;
+  background-color: #E1F0DA;
+  ;
+  width: 66%;
+  justify-content: center;
+  text-align: center;
+} 
 
 @media (max-width: 600px) { /* use a media query to adjust the table layout for smaller screens */
   table {
@@ -38,16 +48,20 @@ img{
   }
   th, td {
     margin: auto;
-    border: none; /* remove the border from the cells */
+    border: 1px; /* remove the border from the cells */
     padding: 10px; /* add some space around the cell content */
-    text-align: center; /* center the cell content vertically */
+   /* center the cell content vertically */
   }
-  
+
   table:before {
-     /*content: attr(data-label); add a label before each cell value */
+    /* add a label before each cell value *   attr(data-label)*/
     font-weight: bold; /* make the label bold */
     display: inline-block; /* make the label inline-block */
     width: 100px; /* set a fixed width for the label */
   }
 }
+
+
+
+
 
